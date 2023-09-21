@@ -286,7 +286,7 @@ h6 {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -345,7 +345,7 @@ section {
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
@@ -459,8 +459,8 @@ section {
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: #050d18;
 }
 
@@ -518,7 +518,7 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .portfolio #portfolio-flters {
@@ -651,8 +651,8 @@ section {
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
 
@@ -667,13 +667,13 @@ section {
 }
 
 .portfolio-details .portfolio-description {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .portfolio-details .portfolio-description p {
@@ -684,7 +684,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .services .icon {
@@ -717,7 +717,7 @@ section {
 .services .title {
   margin-left: 80px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 
@@ -793,7 +793,7 @@ section {
   padding: 20px;
   background: #fff;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   border-radius: 6px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -865,7 +865,7 @@ section {
 
 .contact .info p {
   padding: 0 0 10px 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
   color: #173b6c;
 }
