@@ -294,7 +294,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 1px 0;
   overflow: hidden;
 }
 
@@ -391,7 +391,7 @@ section {
   display: block;
   font-weight: 700;
   color: #050d18;
-  margin-left: 60px;
+  margin-left: 1px;
 }
 
 .facts .count-box p {
