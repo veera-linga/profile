@@ -222,48 +222,6 @@ h6 {
   left: 0;
 }
 
-/* Apply styles to the entire navbar */
-.nav-menu {
-  background-color: #333; /* Background color of the navbar */
-  padding: 10px; /* Padding around the navbar */
-  text-align: center; /* Center-align the navigation links */
-}
-
-/* Style the navigation links within the navbar */
-.nav-menu ul {
-  list-style: none; /* Remove bullet points from the list */
-  padding: 0; /* Remove default padding from the list */
-}
-
-.nav-menu li {
-  display: inline; /* Display list items horizontally */
-  margin-right: 20px; /* Add spacing between list items */
-}
-
-.nav-menu a {
-  color: #fff; /* Link text color */
-  text-decoration: none; /* Remove underlines from links */
-  font-size: 16px; /* Font size of the links */
-}
-
-/* Style the social links within the navbar */
-.social-links {
-  margin-top: 10px; /* Add spacing between the navigation links and social links */
-}
-
-.social-links a {
-  color: #fff; /* Social link icon color */
-  font-size: 24px; /* Font size of the social link icons */
-  margin-right: 10px; /* Add spacing between social links */
-}
-
-/* Style the navigation links on hover */
-.nav-menu a:hover {
-  color: #00bcd4; /* Change link color on hover */
-}
-
-/* Add additional styles for the profile section, images, and other elements as needed */
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
