@@ -1103,3 +1103,46 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+@media print {
+  /* Force the entire side panel (header) to show */
+  #header {
+    display: block !important;
+    visibility: visible !important;
+    transform: none !important; /* remove any translateX hiding it */
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    background: none !important;
+  }
+
+  /* Always show profile details */
+  #header .profile,
+  #header .profile img,
+  #header .profile h1,
+  #header .profile a,
+  #header .social-links {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Force nav menu to show */
+  #header .nav-menu {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Override mobile nav hidden class if JS adds it */
+  .nav-menu.nav-menu-hide,
+  .nav-menu.d-none {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Hide mobile hamburger icon in print */
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+}
+
