@@ -1104,45 +1104,52 @@ section {
   }
 }
 
+/* Force the side panel to be visible when printing */
+/* Hide on screen, show only in print */
+.print-header {
+  display: none;
+}
+
 @media print {
-  /* Force the entire side panel (header) to show */
+  /* Force the sidebar to remain hidden in print */
   #header {
-    display: block !important;
-    visibility: visible !important;
-    transform: none !important; /* remove any translateX hiding it */
-    position: relative !important;
-    width: 100% !important;
-    height: auto !important;
-    background: none !important;
-  }
-
-  /* Always show profile details */
-  #header .profile,
-  #header .profile img,
-  #header .profile h1,
-  #header .profile a,
-  #header .social-links {
-    display: block !important;
-    visibility: visible !important;
-  }
-
-  /* Force nav menu to show */
-  #header .nav-menu {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  /* Override mobile nav hidden class if JS adds it */
-  .nav-menu.nav-menu-hide,
-  .nav-menu.d-none {
-    display: block !important;
-    visibility: visible !important;
-  }
-
-  /* Hide mobile hamburger icon in print */
-  .mobile-nav-toggle {
     display: none !important;
+  }
+
+  /* Show the print-only header at top */
+  .print-header {
+    display: flex !important;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .print-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .print-header h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
   }
 }
 
+
+  /* Show phone number only in print */
+  .phone-print-only {
+    display: block !important;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+/* Hide phone number in normal screen view */
+.phone-print-only {
+  display: none;
+}
