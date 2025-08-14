@@ -1139,17 +1139,3 @@ section {
     margin: 0;
   }
 }
-
-
-  /* Show phone number only in print */
-  .phone-print-only {
-    display: block !important;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-}
-
-/* Hide phone number in normal screen view */
-.phone-print-only {
-  display: none;
-}
