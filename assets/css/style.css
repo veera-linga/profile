@@ -1139,3 +1139,11 @@ section {
     margin: 0;
   }
 }
+@media print {
+  /* ... your existing print styles ... */
+
+  /* Override the margin on the main content area */
+  #main {
+    margin-left: 0 !important;
+  }
+}
