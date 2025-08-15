@@ -270,7 +270,7 @@
     const contactSection = select('#contact .section-title');
     if (contactSection) {
       const phoneElement = document.createElement('p');
-      phoneElement.textContent = `Call me on ${phoneNumber}.`;
+      phoneElement.textContent = `Call me at ${phoneNumber}.`;
       phoneElement.classList.add('print-phone-number'); // Class for CSS styling
       contactSection.appendChild(phoneElement);
     }
