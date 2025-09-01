@@ -1159,3 +1159,34 @@ section {
   }
 }
 
+/* Hide TOC by default */
+.print-toc {
+  display: none;
+}
+
+/* Show TOC only in print */
+@media print {
+  .print-toc {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    gap: 8px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+
+  .print-toc a {
+    border: 1px solid #007acc;
+    background: #e6f3ff;       /* light blue background */
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: 500;
+  }
+
+  .print-toc a:hover {
+    background: #cce7ff;       /* slightly darker blue on hover */
+  }
+}
+
