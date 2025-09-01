@@ -290,4 +290,45 @@
 
 /* === END OF NEW CODE FOR PHONE NUMBER IN PRINT === */
 
+(function () {
+  const phoneNumber = '+91 86887 36108'; // keep private in JS
+
+  const makePhoneLink = () => {
+    const a = document.createElement('a');
+    a.href = 'tel:' + phoneNumber.replace(/\D/g, '');
+    a.className = 'phone-link print-only';
+    a.innerHTML = '<i class="bx bx-phone"></i> ' + phoneNumber;
+    return a;
+  };
+
+  const addPhoneToPrintHeader = () => {
+    const printHeader = document.querySelector('.print-header .social-links');
+    if (!printHeader) return;
+    // avoid duplicates
+    if (!printHeader.querySelector('.phone-link')) {
+      printHeader.appendChild(makePhoneLink());
+    }
+  };
+
+  const removeInjectedPhone = () => {
+    document.querySelectorAll('.phone-link').forEach(el => el.remove());
+  };
+
+  // Use event listeners so you don't overwrite other handlers
+  const before = () => { addPhoneToPrintHeader(); };
+  const after  = () => { removeInjectedPhone(); };
+
+  window.addEventListener('beforeprint', before);
+  window.addEventListener('afterprint', after);
+
+  // Fallback for Chrome/Safari print preview toggles
+  const mql = window.matchMedia('print');
+  if (mql.addEventListener) {
+    mql.addEventListener('change', e => (e.matches ? before() : after()));
+  } else if (mql.addListener) {
+    mql.addListener(e => (e.matches ? before() : after()));
+  }
+})();
+
+
 })()

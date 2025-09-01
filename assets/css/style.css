@@ -1111,12 +1111,6 @@ section {
 }
 
 @media print {
-  /* Force the sidebar to remain hidden in print */
-  #header {
-    display: none !important;
-  }
-
-  /* Show the print-only header at top */
   .print-header {
     display: flex !important;
     align-items: center;
@@ -1138,12 +1132,30 @@ section {
     font-size: 24px;
     margin: 0;
   }
-}
-@media print {
-  /* ... your existing print styles ... */
 
-  /* Override the margin on the main content area */
-  #main {
-    margin-left: 0 !important;
+  .print-header .social-links a {
+    color: white !important;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
   }
 }
+
+/* Hide phone icon by default */
+.phone-link {
+  display: none;
+}
+
+/* Show only in print */
+@media print {
+  .phone-link {
+    display: inline-block;
+    margin-left: 10px;
+    color: black !important;
+    font-size: 14px;
+  }
+  .phone-link i {
+    margin-right: 4px;
+  }
+}
+
