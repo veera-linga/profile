@@ -1157,6 +1157,15 @@ section {
   .phone-link i {
     margin-right: 4px;
   }
+  .footercontainer  {
+  display: none;
+  }
+  .copyright  {
+  display: none;
+  }
+  .credits  {
+  display: none;
+  }
 }
 
 /* Hide TOC by default */
